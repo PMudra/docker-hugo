@@ -13,4 +13,6 @@ RUN set -eux; \
         rm hugo.tar.gz; \
         hugo version
 
+EXPOSE 1313
+
 ENTRYPOINT ["/usr/local/bin/hugo"]
