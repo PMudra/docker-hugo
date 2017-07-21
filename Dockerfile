@@ -12,3 +12,5 @@ RUN set -eux; \
         tar -C /usr/local/bin -xf hugo.tar.gz hugo; \
         rm hugo.tar.gz; \
         hugo version
+
+ENTRYPOINT ["/usr/local/bin/hugo"]
