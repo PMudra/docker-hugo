@@ -27,13 +27,13 @@ Command/Option   | Description
 $ docker run --rm --mount type=bind,source="$(pwd)",target=/usr/src/myapp -w /usr/src/myapp pmudra/hugo new site quickstart
 ```
 
-Command/Option                                            | Description
-----------------------------------------------------------|------------
-`--mount type=bind,source="$(pwd)",target=/usr/src/myapp` | Attach a filesystem mount to the container
-`source="$(pwd)"`                                         | Path to the directory on the host i.e. the path of the current working directory
-`target=/usr/src/myapp`                                   | Path where the directory will be mounted in the container
-`-w /usr/src/myapp`                                       | Working directory inside the container
-`new site quickstart`                                     | Create a new Hugo site named *quickstart*
+Command/Option          | Description
+------------------------|------------
+`--mount type=bind,`    | Attach a filesystem mount to the container
+`source="$(pwd)",`      | Path to the directory on the host i.e. the path of the current working directory
+`target=/usr/src/myapp` | Path where the directory will be mounted in the container
+`-w /usr/src/myapp`     | Working directory inside the container
+`new site quickstart`   | Create a new Hugo site named *quickstart*
 
 The above will create a new Hugo site in a folder named *quickstart*. 
 
