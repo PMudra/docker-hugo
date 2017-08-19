@@ -17,4 +17,4 @@ RUN set -eux; \
 
 EXPOSE 1313
 
-ENTRYPOINT ["/usr/local/bin/hugo"]
+CMD ["/usr/local/bin/hugo"]

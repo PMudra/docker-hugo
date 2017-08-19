@@ -10,8 +10,8 @@ See the official [basic usage](https://gohugo.io/getting-started/usage/) page fo
 ### Get help and version
 
 ```
-$ docker run --rm pmudra/hugo help
-$ docker run --rm pmudra/hugo version
+$ docker run --rm pmudra/hugo hugo help
+$ docker run --rm pmudra/hugo hugo version
 ```
 
 Command/Option   | Description
@@ -19,12 +19,13 @@ Command/Option   | Description
 `docker run`     | Run a command in a new container
 `--rm`           | Automatically remove the container when it exits
 `pmudra/hugo`    | Name of the Hugo Docker image
+`hugo`           | Execute Hugo CLI
 `help`/`version` | Hugo CLI commands (i.e. same as running `hugo help`/`hugo version`)
 
 ### Create a new site
 
 ```
-$ docker run --rm --mount type=bind,source="$(pwd)",target=/usr/src/myapp -w /usr/src/myapp pmudra/hugo new site quickstart
+$ docker run --rm --mount type=bind,source="$(pwd)",target=/usr/src/myapp -w /usr/src/myapp pmudra/hugo hugo new site quickstart
 ```
 
 Command/Option          | Description
@@ -41,7 +42,7 @@ The above will create a new Hugo site in a folder named *quickstart*.
 
 ```
 $ cd quickstart
-$ docker run -it --rm --mount type=bind,source="$(pwd)",target=/usr/src/myapp -w /usr/src/myapp -p 1313:1313 pmudra/hugo server --bind=0.0.0.0
+$ docker run -it --rm --mount type=bind,source="$(pwd)",target=/usr/src/myapp -w /usr/src/myapp -p 1313:1313 pmudra/hugo hugo server --bind=0.0.0.0
 ```
 
 Command/Option   | Description
