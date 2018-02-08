@@ -4,7 +4,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/pmudra/hugo.svg)](https://hub.docker.com/r/pmudra/hugo/)
 [![Docker Stars](https://img.shields.io/docker/stars/pmudra/hugo.svg)](https://hub.docker.com/r/pmudra/hugo/)
 
-Lightweight [Docker](https://www.docker.com/) images for the static site generator [Hugo](https://gohugo.io/).
+Extremely lightweight (< 10 MB) [Docker](https://www.docker.com/) images for the static site generator [Hugo](https://gohugo.io/).
 
 ## How to use this image
 
