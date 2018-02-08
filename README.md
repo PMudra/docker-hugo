@@ -1,6 +1,8 @@
 # Hugo Docker Images
 
-[![Docker Build Statu](https://img.shields.io/docker/build/pmudra/hugo.svg)](https://hub.docker.com/r/pmudra/hugo/)
+[![Docker Build Status](https://img.shields.io/docker/build/pmudra/hugo.svg)](https://hub.docker.com/r/pmudra/hugo/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/pmudra/hugo.svg)](https://hub.docker.com/r/pmudra/hugo/)
+[![Docker Stars](https://img.shields.io/docker/stars/pmudra/hugo.svg)](https://hub.docker.com/r/pmudra/hugo/)
 
 Lightweight [Docker](https://www.docker.com/) images for the static site generator [Hugo](https://gohugo.io/).
 
